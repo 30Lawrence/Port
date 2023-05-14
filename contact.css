@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;600&display=swap');
+
+
+:root{
+    --primaryColor: rgba(28, 28, 28, 1);
+    --secondaryColor:#2962ff;
+    --textColor: #f0f0f0;
+    --cardColor: #f4f4f4;
+    --textFont: 'Inter', sans-serif;
+}
+
+*{
+    text-decoration: none !important;
+    font-family: var(--textFont);
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background: var(--primaryColor);
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.card{
+    width: 510px;
+    height: 300px;
+    background: var(--cardColor);
+    border-radius: 40px;
+    position: absolute;
+    top: 20em;
+    
+}
+
+.blankline{
+    background: var(--primaryColor);
+    width: 510px;
+    height: 10px;
+    position: relative;
+    top: 20px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    font-style: normal;
+    font-size: 30px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 60px;  
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 60px;
+    font-weight: normal;
+}
+
+.number{
+    position: relative;
+    top: 80px;
+}
+
+.phone{
+    position: relative;
+    top: 85px;
+}
+
+.address{
+    position: relative;
+    top: 65px;
+}
+a{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 115px;
+    font-weight: bold;
+    color: var(--primaryColor);
+}
+
+a:hover{
+    color: #7e7e7e;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primaryColor);
+    z-index: 1;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid var(--textColor);
+    border-top-color: var(--secondaryColor);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from { transform: rotate(0turn);}
+    to {transform: rotate(1turn)}
+    
+}
