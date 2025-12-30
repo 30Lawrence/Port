@@ -68,7 +68,7 @@ section{
 
 .Homepage-1div{
     color: var(--textColor);
-    width: 515px;
+    width: 500px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -278,6 +278,7 @@ footer{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
 
 
 
