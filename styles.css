@@ -74,7 +74,7 @@ section{
     justify-content: center;
     text-align: center;
     position: relative;
-    top: 1000px;
+    top: 1030px;
 }
 
 .line{
@@ -278,6 +278,7 @@ footer{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
 
 
 
